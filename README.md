@@ -1,30 +1,36 @@
-Nền tảng Quản lý Nhà Trọ Online
+# Nền tảng Quản Lý Gara Ô Tô Online
 
-(Boarding House Management System)
+*(Garage Management System)*
 
-Ứng dụng Backend xây dựng trên nền tảng NestJS, TypeScript và MySQL nhằm hỗ trợ chủ nhà trọ quản lý phòng trọ, người thuê, hợp đồng và doanh thu một cách hiệu quả.
+Ứng dụng Backend xây dựng trên nền tảng NestJS, TypeScript và MySQL nhằm hỗ trợ chủ gara quản lý khách hàng, phương tiện, lịch sửa chữa, phụ tùng và doanh thu một cách hiệu quả.
 
-1. Thực trạng & Ý tưởng dự án
+---
 
-Hiện nay nhiều nhà trọ vẫn quản lý thông tin phòng và người thuê bằng sổ sách hoặc file Excel. Điều này dễ dẫn đến:
+## 1. Thực trạng & Ý tưởng dự án
 
-Thất lạc thông tin người thuê
-Khó quản lý phòng trống/phòng đang thuê
-Khó theo dõi hợp đồng và tiền thuê
-Chậm cập nhật trạng thái phòng
-Khó thống kê doanh thu
-Giải pháp
+Hiện nay nhiều gara ô tô vẫn quản lý thông tin khách hàng và lịch sửa chữa bằng sổ sách hoặc file Excel. Điều này dễ dẫn đến:
 
-Xây dựng hệ thống quản lý nhà trọ trực tuyến với các API CRUD tập trung, kết nối trực tiếp tới cơ sở dữ liệu MySQL.
+- Thất lạc thông tin khách hàng
+- Khó theo dõi lịch bảo dưỡng, sửa chữa
+- Khó quản lý phụ tùng tồn kho
+- Sai sót trong việc lập hóa đơn
+- Khó thống kê doanh thu và chi phí
+- 
+### Giải pháp
 
-Điểm cốt lõi của dự án
-Quản lý khu trọ
-Quản lý phòng trọ
-Quản lý người thuê
-Quản lý hợp đồng thuê
-Quản lý hóa đơn điện nước
-Theo dõi doanh thu
-Kiểm tra phòng trống tự động
-Phân loại trạng thái phòng
+Xây dựng hệ thống quản lý gara ô tô trực tuyến với các API CRUD tập trung, kết nối trực tiếp tới cơ sở dữ liệu MySQL.
 
-Giúp chủ nhà trọ quản lý nhanh chóng, chính xác và tiết kiệm thời gian.
+### Điểm cốt lõi của dự án
+
+- Quản lý khách hàng
+- Quản lý phương tiện
+- Quản lý lịch sửa chữa
+- Quản lý phụ tùng
+- Quản lý hóa đơn dịch vụ
+- Theo dõi doanh thu
+- Quản lý nhân viên kỹ thuật
+- Phân loại trạng thái sửa chữa
+
+Giúp chủ gara quản lý nhanh chóng, chính xác và tiết kiệm thời gian.
+
+---

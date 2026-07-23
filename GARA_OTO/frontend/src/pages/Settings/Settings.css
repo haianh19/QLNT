@@ -1,0 +1,317 @@
+.settings-page {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0a0e27 0%, #0f1035 50%, #1a0a2e 100%);
+    padding: 24px;
+}
+
+.settings-container {
+    max-width: 900px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 24px;
+}
+
+.settings-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+    align-items: stretch;
+}
+
+.settings-card {
+    background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 100%);
+    border: 1px solid rgba(0, 255, 255, 0.15);
+    border-radius: 14px;
+    padding: 28px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3), inset 0 0 20px rgba(0, 255, 255, 0.05);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    height: 100%;
+}
+
+.settings-card:hover {
+    border-color: rgba(0, 255, 255, 0.3);
+    box-shadow: 0 16px 48px rgba(0, 255, 255, 0.15), inset 0 0 30px rgba(0, 255, 255, 0.08);
+    transform: translateY(-2px);
+}
+
+.card-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid rgba(0, 255, 255, 0.1);
+}
+
+.card-icon {
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 48px;
+    background: linear-gradient(135deg, rgba(0, 255, 255, 0.1), rgba(0, 200, 255, 0.05));
+    border: 1px solid rgba(0, 255, 255, 0.2);
+    border-radius: 10px;
+    animation: iconFloat 3s ease-in-out infinite;
+}
+
+@keyframes iconFloat {
+    0%,
+    100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.card-title {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #00ffff;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+
+/* Garage Info Card */
+
+.garage-info-card .info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+    background: rgba(0, 255, 255, 0.02);
+    border: 1px solid rgba(0, 255, 255, 0.08);
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    background: rgba(0, 255, 255, 0.05);
+    border-color: rgba(0, 255, 255, 0.15);
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.1);
+    transform: translateX(4px);
+}
+
+.info-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    color: rgba(0, 255, 255, 0.7);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-icon {
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-value {
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 1.5;
+    word-break: break-word;
+}
+
+.info-link {
+    color: #00ffff;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.info-link:hover {
+    color: #00ddff;
+    text-decoration: underline;
+    filter: drop-shadow(0 0 8px rgba(0, 255, 255, 0.4));
+}
+
+
+/* Music Player Card */
+
+.music-player-card {
+    grid-column: 1 / -1;
+}
+
+/* Social Media Card */
+.social-media-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.social-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.social-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px;
+    border-radius: 10px;
+    text-decoration: none;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: rgba(255, 255, 255, 0.03);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.social-item:hover {
+    transform: translateY(-2px);
+}
+
+.social-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+}
+
+.social-name {
+    color: #ffffff;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+}
+
+.social-item.facebook:hover {
+    border-color: rgba(24, 119, 242, 0.8);
+    box-shadow: 0 0 12px rgba(24, 119, 242, 0.35);
+}
+
+.social-item.facebook .social-logo {
+    background: #1877f2;
+}
+
+.social-item.instagram:hover {
+    border-color: rgba(225, 48, 108, 0.8);
+    box-shadow: 0 0 12px rgba(225, 48, 108, 0.35);
+}
+
+.social-item.instagram .social-logo {
+    background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af);
+}
+
+.social-item.youtube:hover {
+    border-color: rgba(255, 0, 0, 0.8);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.35);
+}
+
+.social-item.youtube .social-logo {
+    background: #ff0000;
+}
+
+.social-item.tiktok:hover {
+    border-color: rgba(37, 244, 238, 0.8);
+    box-shadow: 0 0 12px rgba(37, 244, 238, 0.35);
+}
+
+.social-item.tiktok .social-logo {
+    background: #000000;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1024px) {
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+    .garage-info-card .info-grid {
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    }
+    .settings-card {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .settings-page {
+        padding: 16px;
+    }
+    .settings-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+    .settings-card {
+        padding: 16px;
+        border-radius: 12px;
+    }
+    .card-header {
+        gap: 12px;
+        margin-bottom: 18px;
+        padding-bottom: 12px;
+    }
+    .card-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 24px;
+    }
+    .card-title {
+        font-size: 18px;
+    }
+    .garage-info-card .info-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    .info-item {
+        padding: 12px;
+        gap: 6px;
+    }
+    .info-value {
+        font-size: 14px;
+    }
+    .info-label {
+        font-size: 11px;
+    }
+
+    .social-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .settings-page {
+        padding: 12px;
+    }
+    .settings-grid {
+        grid-template-columns: 1fr;
+    }
+    .settings-card {
+        padding: 12px;
+    }
+    .card-header {
+        gap: 10px;
+    }
+    .card-title {
+        font-size: 16px;
+    }
+    .info-item {
+        padding: 10px;
+    }
+    .info-value {
+        font-size: 13px;
+    }
+}
